@@ -2,10 +2,14 @@ const love = ['A new person will come', 'Be careful with companion', 'Maybe is t
 const luckyNumbers = [];
 const job = ['Time for changes', 'You will have good news soon', 'You have to confront your boss', 'You deserve more'];
 
-let helperLuckyNumbers = () => {
-    for (let i = 1; i < 101; i++) {
-        luckyNumbers.push(i)
-    }
+let numberGenerator = (num) => {
+    let number = Math.floor(Math.random()*(num + 1));
+    return number;
 };
-helperLuckyNumbers();
 
+console.log(numberGenerator(5))
+console.log(numberGenerator(5))
+console.log(numberGenerator(5))
+console.log(numberGenerator(5))
+console.log(numberGenerator(5))
+console.log(numberGenerator(5))
