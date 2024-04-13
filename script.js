@@ -23,5 +23,12 @@ const pickJob = () => {
     return pickedJob;
 };
 
+const fortune = () => {
+    let l = pickLove();
+    let j = pickJob();
+    let ln = pickLuckyNumber();
+    return `Your fortune says that for love "${l}". While on job matters "${j}". Also your lucky number is "${ln}"`;
+};
 
+console.log(fortune())
 
